@@ -8,7 +8,7 @@ namespace Space {
   void swap(X& object1, X& object2) {
     std::cout << "Custom Swap" << '\n';
   }
-}
+} // namespace Space
 
 void foo1() {
   std::cout << "foo1" << '\n';
