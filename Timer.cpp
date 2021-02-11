@@ -29,7 +29,7 @@ int main() {
         }
     }
 
-    /* Calling elapsed() will tell us how long the program took to run up to that point.*/
+    /* Calling elapsed() will tell us how long the program took to run up to that point. */
     std::cout << timer.elapsed() << " seconds\n";
 
     return 0;
