@@ -1,5 +1,3 @@
-/* Demonstration of Argument Dependent Lookup (ADL). */
-
 #include <iostream>
 
 namespace Space {
