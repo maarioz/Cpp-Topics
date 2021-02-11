@@ -30,13 +30,13 @@ void foo(int options) {
 int main(int argc, char* argv[]) {
 
   constexpr std::bitset<8> mask0{ 1 << 0 }; // 0000 0001
-	constexpr std::bitset<8> mask1{ 1 << 1 }; // 0000 0010
-	constexpr std::bitset<8> mask2{ 1 << 2 }; // 0000 0100
-	constexpr std::bitset<8> mask3{ 1 << 3 }; // 0001 0000
-	constexpr std::bitset<8> mask4{ 1 << 4 }; // 0001 0000
-	constexpr std::bitset<8> mask5{ 1 << 5 }; // 0010 0000
-	constexpr std::bitset<8> mask6{ 1 << 6 }; // 0100 0000
-	constexpr std::bitset<8> mask7{ 1 << 7 }; // 1000 0000
+  constexpr std::bitset<8> mask1{ 1 << 1 }; // 0000 0010
+  constexpr std::bitset<8> mask2{ 1 << 2 }; // 0000 0100
+  constexpr std::bitset<8> mask3{ 1 << 3 }; // 0001 0000
+  constexpr std::bitset<8> mask4{ 1 << 4 }; // 0001 0000
+  constexpr std::bitset<8> mask5{ 1 << 5 }; // 0010 0000
+  constexpr std::bitset<8> mask6{ 1 << 6 }; // 0100 0000
+  constexpr std::bitset<8> mask7{ 1 << 7 }; // 1000 0000
 
   std::bitset<8> bits{0};
 
