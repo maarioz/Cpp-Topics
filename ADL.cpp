@@ -1,32 +1,32 @@
 #include <iostream>
 
-namespace Space {
+namespace space {
   class X {};
 
   void swap(X& object1, X& object2) {
     std::cout << "Custom Swap" << '\n';
   }
-} // namespace Space
+} // namespace space
 
 void foo1() {
   std::cout << "foo1" << '\n';
   /* Uses std::swap, always. */
-  Space::X obj1, obj2;
+  space::X obj1, obj2;
   std::swap(obj1, obj2);
 }
 
 void foo2() {
   std::cout << "foo2" << '\n';
-  /* Uses Space::X swap if it exists. Otherwise, it does not compile. */
-  Space::X obj1, obj2;
+  /* Uses space::X swap if it exists. Otherwise, it does not compile. */
+  space::X obj1, obj2;
   swap(obj1, obj2);
 }
 
 void foo3() {
   std::cout << "foo3" << '\n';
-  /* Uses Space::X swap if it exists. Otherwise, it uses std::swap. */
+  /* Uses space::X swap if it exists. Otherwise, it uses std::swap. */
   using std::swap;
-  Space::X obj1, obj2;
+  space::X obj1, obj2;
   swap(obj1, obj2);
 }
 
