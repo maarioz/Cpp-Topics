@@ -1,6 +1,7 @@
 #ifndef LOGGER_HPP
 #define LOGGER_HPP
 
+#include <string>
 #include <fstream>
 
 /* To start with empty file, call std::ofstream ofs("log.txt"); + ofs.close(); at the start of program. */
