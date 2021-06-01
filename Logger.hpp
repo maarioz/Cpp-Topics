@@ -1,7 +1,6 @@
 #ifndef LOGGER_HPP
 #define LOGGER_HPP
 
-#include <string>
 #include <fstream>
 
 /* To start with empty file, call std::ofstream ofs("log.txt"); + ofs.close(); at the start of program. */
@@ -18,12 +17,9 @@ public:
     return std::string(stringBuffer);
   }
 
-  static void log(const std::string& type, const std::string& message) {
-    std::string file = "log.txt";
-    std::string dateTime = getCurrentDateTime();
-    std::ofstream ofs(file.c_str(), std::ios_base::out | std::ios_base::app);
-
-    ofs << dateTime << ' ' << type << '\t'<< message << std::endl;
+  static void log(const char* type, const std::string& message) {
+    std::ofstream ofs("log.txt", std::ios_base::out |  std::ios_base::app);
+    ofs << getCurrentDateTime() << ' ' << type << '\t'<< message << std::endl;
     ofs.close();
   }
 };
